@@ -246,19 +246,19 @@
   };
 
   // Add click event listeners to the "See" buttons
-  const buttons = document.querySelectorAll('.message-button');
-  buttons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-      // Check if the button corresponds to the "HOMEPAGE" card (index 0)
-      if (index === 0) {
-        window.location.href = 'index.html'; // Redirect only for HOMEPAGE card
-      } else {
-        alert('No redirection for this activity.'); // Optional message for other cards
-      
-      }
-    });
+const buttons = document.querySelectorAll('.message-button');
+buttons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    if (index === 0) {
+      // Redirect for HOMEPAGE card
+      window.location.href = 'index.html';
+    } else if (index === 1) {
+      // Redirect for Dream Places (Activity 2)
+      window.location.href = 'Dream Places/index2.html';
+    } else {
+      // No redirection for other activities
+      console.log('No redirection for this activity.');
+    }
   });
-</script>
+});
 
-</body>
-</html>
