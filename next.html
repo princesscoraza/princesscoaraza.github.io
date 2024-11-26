@@ -170,13 +170,14 @@
         </div>
 
         <div class="card-item swiper-slide">
-    <img src="https://i.ytimg.com/vi/YJn5W_TxHpQ/maxresdefault.jpg" alt="User Image" class="user-image">
-    <h2 class="user-name">Dream Places</h2>
+    <img src="https://i.pinimg.com/originals/f0/5e/72/f05e726058cb942b45e5621d47b7c2a8.jpg" alt="User Image" class="user-image">
+    <h2 class="user-name">Unknown</h2>
     <p class="user-profession">Activity Number 2</p>
-    <!-- Link to Dream Places/index2.html -->
+    <!-- Dream Places/index2.html -->
     <a href="Dream Places/index2.html">
-        <button class="message-button">See</button>
+      <button class="message-button">See</button>
     </a>
+    
 </div>
 
 
@@ -246,21 +247,15 @@
   };
 
   // Add click event listeners to the "See" buttons
-const buttons = document.querySelectorAll('.message-button');
+  const buttons = document.querySelectorAll('.message-button');
 buttons.forEach((button, index) => {
   button.addEventListener('click', () => {
     if (index === 0) {
-      // Redirect for HOMEPAGE card
-      window.location.href = 'index.html';
-    } else if (index === 1) {
-      // Redirect for Dream Places (Activity 2)
-      window.location.href = 'Dream Places/index2.html';
-    } else {
-      // No redirection for other activities
-      console.log('No redirection for this activity.');
+      window.location.href = 'index.html'; // Redirect only for HOMEPAGE card
     }
   });
 });
+
 </script>
 
 </body>
