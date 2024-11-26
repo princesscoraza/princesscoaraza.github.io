@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+
+body {
+  color: #fff;
+  background: #000; /* Fallback in case the image fails */
+}
+
+/* Container Styling */
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://www.hdwallpapers.in/download/iron_man_artwork_2020_4k_hd_superheroes-HD.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navigation Bar */
+nav {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo a {
+  font-size: 32px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo span {
+  color: #f9004d;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f9004d;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+.btn {
+  background: #000;
+  border-radius: 6px;
+  padding: 9px 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #f9004d;
+}
+
+/* Content Section */
+.content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.content h2 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.content p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.link {
+  margin-top: 20px;
+}
+
+.hire {
+  color: #000;
+  text-decoration: none;
+  background: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.hire:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  .content h2 {
+    font-size: 36px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .hire {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .content h2 {
+    font-size: 28px;
+  }
+
+  .content p {
+    font-size: 12px;
+  }
+}
