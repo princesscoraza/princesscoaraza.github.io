@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found</title>
+  <!-- Add Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Apply full viewport height */
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Set the background image */
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('images/404 animated.jpg'); /* Use your animated image */
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+    }
+
+    /* Container to position the buttons at the bottom */
+    .container {
+      position: absolute;
+      bottom: 20px; /* Position buttons near the bottom */
+      left: 50%;
+      transform: translateX(-50%); /* Center the buttons horizontally */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; /* Space between buttons */
+    }
+
+    /* Style the Exit and Play buttons */
+    .exit-button, .play-button {
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      color: white;
+      border: 2px solid #28a745;
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Green Exit button */
+    .exit-button {
+      background-color: #28a745; /* Green color */
+    }
+
+    .exit-button:hover {
+      background-color: white;
+      color: #28a745;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transform: scale(1.1);
+    }
+
+    .exit-button:active {
+      transform: scale(0.95);
+    }
+
+    /* Red Play button */
+    .play-button {
+      background-color: #dc3545; /* Red color */
+    }
+
+    .play-button:hover {
+      background-color: white;
+      color: #dc3545;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transform: scale(1.1);
+    }
+
+    .play-button:active {
+      transform: scale(0.95);
+    }
+
+    /* Optional for smaller screens */
+    @media (max-width: 768px) {
+      .exit-button, .play-button {
+        font-size: 1.2rem;
+        padding: 12px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Image -->
+  <div class="background"></div>
+
+  <!-- Container for the buttons (side by side at the bottom) -->
+  <div class="container">
+    <button class="exit-button" onclick="window.location.href='index.html'">Exit</button>
+    <button class="play-button" onclick="window.location.href='https://poki.com/?msockid=0acb00114e03666d0a3514734f5167bf'">Play</button>
+  </div>
+
+  <!-- Optional Bootstrap JS (for future interactive components) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
